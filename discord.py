@@ -31,7 +31,7 @@ def generate_reply(prompt, use_google_ai=True, use_file_reply=False, language="e
         else:
             ai_prompt = f"{prompt}\n\nRespond with 1 sentence in casual Jakarta-style slang without any symbols."
 
-        url = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={google_api_key}'
+        url = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={google_api_key}'
         headers = {'Content-Type': 'application/json'}
         data = {'contents': [{'parts': [{'text': ai_prompt}]}]}
 
