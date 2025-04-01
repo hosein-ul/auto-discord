@@ -27,7 +27,7 @@ def generate_reply(prompt, use_google_ai=True, use_file_reply=False, language="e
 
     if use_google_ai:
         if language == "en":
-            ai_prompt = f"{prompt}\n\nJust respond with a sentence in normal urban Bengali like a natural conversation and do not use symbols. You can also speak English if necessary."
+            ai_prompt = f"{prompt}\n\nJust respond with a sentence in normal urban english like a natural conversation and do not use symbols. You can also speak English if necessary."
         else:
             ai_prompt = f"{prompt}\n\nRespond with 1 sentence in casual Jakarta-style slang without any symbols."
 
