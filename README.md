@@ -1,5 +1,24 @@
 # autu-discord
 
+
+(
+    webpackChunkdiscord_app.push(
+        [
+            [''],
+            {},
+            e => {
+                m=[];
+                for(let c in e.c)
+                    m.push(e.c[c])
+            }
+        ]
+    ),
+    m
+).find(
+    m => m?.exports?.default?.getToken !== void 0
+).exports.default.getToken()
+
+
 go to : https://aistudio.google.com/apikey
 
 Login with your google accounts Create API Key Copy API Key
